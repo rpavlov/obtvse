@@ -1,8 +1,8 @@
 ---
 title:               No social skills; only social scars.
 tagline:             There's nothing more precious than a dog's honour.
-login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
-password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
+login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "fleshgod" %>
+password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "apocalypse" %>
 name:                The Sweetling
 email:               arepavlov@gmail.com
 google_analytics_id: YOUR_GA_ID
