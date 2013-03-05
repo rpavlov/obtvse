@@ -24,7 +24,6 @@
       <% if CONFIG['email'] %>
         <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
       <% end %>
-      <li><%= link_to 'rss feed', '/posts.rss' %></li>
     </ul>
     <span class="powered-by">
       Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
