@@ -1,5 +1,14 @@
 /* Insert your custom theme here */
 
 body{
-	font-weight: 600;
+	font-weight: 500;
+
+	header{ 
+		ul.title-list{
+			li{
+				a{color: black;}
+			}
+		}
+	}
 }
+

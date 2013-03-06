@@ -1,10 +1,15 @@
 class PostsController < ApplicationController
   before_filter :authenticate, :except => [:index, :show]
+  before_filter :init
   layout :choose_layout
+
+  def init
+    @posts_limited = []
+  end
 
   def index
     @posts = Post.page(params[:page]).per(10).where(draft:false)
-
+    @posts_limited =  @posts.limit(10)
     respond_to do |format|
       format.html
       format.xml { render :xml => @posts }
