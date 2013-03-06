@@ -9,7 +9,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.page(params[:page]).per(10).where(draft:false)
-    @posts_limited =  @posts.limit(10)
+    @posts_limited =  @posts.limit(5)
     respond_to do |format|
       format.html
       format.xml { render :xml => @posts }
